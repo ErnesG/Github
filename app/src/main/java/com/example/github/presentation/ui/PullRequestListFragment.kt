@@ -1,4 +1,4 @@
-package com.example.github.presentation.ui.components
+package com.example.github.presentation.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -11,6 +11,7 @@ import com.example.github.presentation.viewmodel.PullRequestViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import androidx.compose.runtime.livedata.observeAsState
 import com.example.github.domain.model.Resource
+import com.example.github.presentation.ui.components.PullRequestListView
 
 
 @AndroidEntryPoint
