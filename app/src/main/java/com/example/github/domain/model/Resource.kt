@@ -1,4 +1,4 @@
-package com.example.github.domain
+package com.example.github.domain.model
 
 sealed class Resource<out T> {
     object Loading: Resource<Nothing>()
