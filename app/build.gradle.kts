@@ -64,6 +64,7 @@ dependencies {
     // Lifecycle (ViewModel & LiveData)
     implementation ("androidx.lifecycle:lifecycle-livedata-ktx:2.6.1")
     implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1")
+    implementation("androidx.compose.runtime:runtime-livedata:1.5.1")
 
     // Navigation (for Fragments)
     implementation ("androidx.navigation:navigation-fragment-ktx:2.6.0")
