@@ -1,4 +1,4 @@
-package com.example.github.model
+package com.example.github.data.model
 
 data class LabelResponse(
     val id: Long,
