@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nag_graph">
+    android:id="@+id/nag_graph"
+    app:startDestination="@id/pullRequestListFragment">
 
+    <fragment
+        android:id="@+id/pullRequestListFragment"
+        android:name="com.example.github.presentation.ui.PullRequestListFragment"
+        android:label="PullRequestListFragment" >
+        <action
+            android:id="@+id/action_pullRequestListFragment_to_pullRequestDetailFragment"
+            app:destination="@id/pullRequestDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pullRequestDetailFragment"
+        android:name="com.example.github.presentation.ui.PullRequestDetailFragment"
+        android:label="PullRequestDetailFragment" />
 </navigation>
