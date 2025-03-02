@@ -32,6 +32,9 @@ class PullRequestViewModel @Inject constructor(private val getPullRequestsUseCas
     fun setFilter(label: String?) {
         _filterLabel.value = label
     }
+    init {
+        fetchPullRequests()
+    }
 
     // filtered list combining pull requests and filterLabel
     val filteredPullRequests: LiveData<List<PullRequestResponse>> =
