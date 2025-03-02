@@ -42,6 +42,7 @@ fun PullRequestListView(
             FilterButton(label = "All", onClick = { onFilterSelected(null) })
             FilterButton(label = "bug", onClick = { onFilterSelected("bug") })
             FilterButton(label = "enhancement", onClick = { onFilterSelected("enhancement") })
+            FilterButton(label = "animals", onClick = {onFilterSelected("animals")})
         }
         Spacer(modifier = Modifier.height(16.dp))
         if (isLoading) {
